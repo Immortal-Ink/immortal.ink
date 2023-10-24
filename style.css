@@ -241,3 +241,38 @@ html,body {
   font-size: 3.8em;
   color: #fff;
 }
+.announcement-box {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 30px auto;  /* vertically spaced and centered */
+  max-width: 40%;     /* adjust this to your desired width, e.g., 50%, 600px, etc. */
+  border: 1px solid #4A90E2; /* soft blue border */
+  border-radius: 5px; /* slightly rounded corners */
+  background-color: #1c1c1c;
+}
+
+.announcement-box i {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #4A90E2; /* matching the border color */
+}
+
+.announcement-box p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {  /* This is a common breakpoint for tablets and below */
+  .announcement-box {
+    max-width: 80%; /* Increase the width on mobile for better utilization of space */
+    margin-top: 100px;
+  }
+
+  .announcement-box p {
+    font-size: 14px; /* Decrease the font size on mobile for better readability */
+  }
+}
