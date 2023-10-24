@@ -276,3 +276,13 @@ html,body {
     font-size: 14px; /* Decrease the font size on mobile for better readability */
   }
 }
+
+.sp {
+  line-height: 2;
+  color: white;
+  text-align:center;
+  font-family: 'Comfortaa', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 100px;
+}
