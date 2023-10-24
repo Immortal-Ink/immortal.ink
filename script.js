@@ -73,17 +73,17 @@ tlOpen.add("preOpen")
 //CLOSE TIMELINE
 tlClose.add("close")
   .to(menuTop, 0.2, {
-  backgroundColor: "white", ease: Power4.easeInOut, onComplete: function() {
+  backgroundColor: "#bbbbbb", ease: Power4.easeInOut, onComplete: function() {
     logo.css('z-index','26');
     closeTrigger.css('z-index','5');
  openTrigger.css('visibility','visible');
   }
 }, "close")
 .to(menuMiddle, 0.2, {
-  backgroundColor: "white", ease: Power4.easeInOut
+  backgroundColor: "#bbbbbb", ease: Power4.easeInOut
 }, "close") 
 .to(menuBottom, 0.2, {
-  backgroundColor: "white", ease: Power4.easeInOut
+  backgroundColor: "#bbbbbb", ease: Power4.easeInOut
 }, "close")
   .to(menu, 0.6, {
   y: 20, opacity: 0, ease: Power4.easeOut, onComplete: function() {
@@ -105,9 +105,9 @@ tlClose.add("close")
   y: "23%",
   ease: Power4.easeInOut,
   onComplete: function() {
-    menuTop.css('background-color','#ffffff');
-    menuMiddle.css('background-color','#ffffff');
-    menuBottom.css('background-color','#ffffff');
+    menuTop.css('background-color','#bbbbbb');
+    menuMiddle.css('background-color','#bbbbbb');
+    menuBottom.css('background-color','#bbbbbb');
   }
 }, "close", "+=0.2")
 .to(closeTriggerLeft, 0.2, {
