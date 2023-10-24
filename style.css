@@ -1,4 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+@font-face {
+  font-family: 'BerkeleyMonoVariable';
+  src: url('bm/BerkeleyMonoVariable-Regular.woff2') format('woff2'),
+  url('bm/BerkeleyMonoVariable-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BerkeleyMonoVariable';
+  src: url('bm/BerkeleyMonoVariable-Italic.woff2') format('woff2'),
+  url('bm/BerkeleyMonoVariable-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
 html,body {
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
@@ -252,6 +268,14 @@ html,body {
   background-color: #1c1c1c;
 }
 
+.announcement-box {
+  position: fixed;
+  bottom: 30px;
+  right: 0;  /* If you want it to be aligned to the right of the screen */
+  left: 0;  /* If you want it to be centered and extend the full width, in conjunction with `right: 0;` */
+  /* Any other styles you want for the box */
+}
+
 .announcement-box i {
   font-size: 20px;
   margin-right: 20px;
@@ -269,7 +293,7 @@ html,body {
 @media only screen and (max-width: 768px) {  /* This is a common breakpoint for tablets and below */
   .announcement-box {
     max-width: 80%; /* Increase the width on mobile for better utilization of space */
-    margin-top: 100px;
+    margin: 0 auto; /* This will center the box if it doesn't span the full width */
   }
 
   .announcement-box p {
