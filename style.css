@@ -117,17 +117,23 @@ html,body {
 
 .logo {
   display: block;
-  width: 64px;
-  height: 64px;
-  position: absolute;
+  width: 20vw;
+  height: auto; /* Set height to maintain aspect ratio */
+  position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -52px;
-  margin-left: -52px;
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 10;
   fill: #bbbbbb;
 }
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 50vw; /* Adjust the size for mobile screens */
+  }
+}
+
 .logo span {
   display: block;
   text-align: center;
@@ -214,7 +220,7 @@ html,body {
   width: 18px;
   height: 4px;
   opacity: 0;
-  background-color: #222222;
+  background-color: #000000;
   transform: translateX(100px);
   transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
 }
